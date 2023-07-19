@@ -21,9 +21,6 @@ namespace AvailabilityTest
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
 
-            var randomDuration = new Random().Next(1, 100);
-            var success = new Random().Next(0, 2) == 1;
-
             var appInsights = new TelemetryClient(
                 new Microsoft.ApplicationInsights.Extensibility.TelemetryConfiguration
                 {
